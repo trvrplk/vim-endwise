@@ -43,7 +43,7 @@ augroup endwise " {{{1
 				\	let b:endwise_addition = ")" |
 				\ let b:endwise_words    = "("
 	autocmd FileType *.rl
-				\ let b:endwise_addition = "}%%"
+				\ let b:endwise_addition = "}%%" |
 				\ let b:endwise_words    = "%%{"
 	  autocmd FileType c,cpp,objc
         \ let b:endwise_addition  = '}' |
@@ -51,19 +51,19 @@ augroup endwise " {{{1
         \ let b:endwise_pattern   = '\%(else\s*\)\@<!{\s*$' |
         \ let b:endwise_syngroups = '.*'
 		autocmd FileType dot
-				\ let b:endwise_addition = '}'
+				\ let b:endwise_addition = '}' |
 				\ let b:endwise_words = '{'
 		autocmd FileType *.scala
-				\ let b:endwise_addition = '}'
+				\ let b:endwise_addition = '}' |
 				\ let b:endwise_words = '{'
 		autocmd FileType *.ooc
-				\ let b:endwise_addition = '}'
-				\ let b:endwise_words =  '{'
+				\ let b:endwise_addition = '}' |
+				\ let b:endwise_words    = '{'
 		autocmd FileType *.clj
-				\ let b:endwise_addition = ')'|
+				\ let b:endwise_addition = ')' |
 				\ let endwise_words      = '('
 		autocmd FileType java
-				\ let b:endwise_addition = "}"|
+				\ let b:endwise_addition = "}" |
 				\ let b:endwise_words    = "{"
 augroup END " }}}1
 
