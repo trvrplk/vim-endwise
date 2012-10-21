@@ -64,7 +64,7 @@ augroup endwise " {{{1
 				\ let endwise_words = '('
 		autocmd FileType java
 				\ let b:endwise_addition = "}"
-				\ let b:endwise_words = "{"
+				\ let b:endwise_words    = "{"
 augroup END " }}}1
 
 " Maps {{{1
