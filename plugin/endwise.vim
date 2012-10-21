@@ -71,6 +71,9 @@ augroup endwise " {{{1
 		autocmd BufRead *.tcl
 				\ let b:endwise_addition = "}" |
 				\ let b:endwise_words		 = "{"
+		autocmd BufRead *.go
+				\ let b:endwise_addition = "}" |
+				\ let b:endwise_words		 = "{"
 augroup END " }}}1
 
 " Maps {{{1
