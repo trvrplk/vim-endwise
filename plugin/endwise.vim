@@ -62,6 +62,9 @@ augroup endwise " {{{1
 		autocmd FileType *.clj
 				\ let b:endwise_addition = ')'
 				\ let endwise_words = '('
+		autocmd FileType java
+				\ let b:endwise_addition = "}"
+				\ let b:endwise_words = "{"
 augroup END " }}}1
 
 " Maps {{{1
