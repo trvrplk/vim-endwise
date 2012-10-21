@@ -68,6 +68,9 @@ augroup endwise " {{{1
 		autocmd BufRead *.php
 				\ let b:endwise_addition = "}" |
 				\ let b:endwise_words		 = "{"
+		autocmd BufRead *.tcl
+				\ let b:endwise_addition = "}" |
+				\ let b:endwise_words		 = "{"
 augroup END " }}}1
 
 " Maps {{{1
