@@ -39,10 +39,10 @@ augroup endwise " {{{1
 				\ let b:endwise_additon   = "}" |
 				\ let b:endwsie_words     = '{' |
 				\	let b:endwise_syngroups = 'javaScriptFunction,javaScriptConditional'
-	autocmd FileType *.io
+	autocmd BufRead *.io
 				\	let b:endwise_addition = ")" |
 				\ let b:endwise_words    = "("
-	autocmd FileType *.rl
+	autocmd BufRead *.rl
 				\ let b:endwise_addition = "}%%" |
 				\ let b:endwise_words    = "%%{"
 	  autocmd FileType c,cpp,objc
@@ -53,13 +53,13 @@ augroup endwise " {{{1
 		autocmd FileType dot
 				\ let b:endwise_addition = '}' |
 				\ let b:endwise_words = '{'
-		autocmd FileType *.scala
+		autocmd BufRead *.scala
 				\ let b:endwise_addition = '}' |
 				\ let b:endwise_words = '{'
-		autocmd FileType *.ooc
+		autocmd BufRead *.ooc
 				\ let b:endwise_addition = '}' |
 				\ let b:endwise_words    = '{'
-		autocmd FileType *.clj
+		autocmd BufRead *.clj
 				\ let b:endwise_addition = ')' |
 				\ let endwise_words      = '('
 		autocmd FileType java
